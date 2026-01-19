@@ -22,6 +22,7 @@ main {
     border: .25rem solid #3F4F44;
     border-radius: 2rem;
     margin-top: 1rem;
+    color: #2C3930
 }
 
 h1 {
@@ -44,13 +45,14 @@ a {
 }
 
 li {
-    background-color: tan;
+    background-color: #A27B5C;
     padding: .5rem;
-    border: 1px solid black;
+    border: 2px solid #3F4F44;
     border-radius: 20px;
     margin: 2px;
     display: inline-block;
     width: fit-content;
+    color: #DCD7C9;
 }
 
 .location {
@@ -66,6 +68,7 @@ li {
 h2 {
     width: 50%;
     border-bottom: 2px solid #3F4F44;
+    
 
 }
 
@@ -79,4 +82,19 @@ h2 {
 
 #aboutMe p{
     width: 50%
+}
+
+#experience div{
+    background-color: #3F4F44;
+    border: .25rem solid #A27B5C;
+    border-radius: 2rem;
+    padding: 1rem;
+    color:#DCD7C9;
+    margin-bottom: 1rem;
+
+}
+
+img{
+    border: 2px solid #3F4F44;
+    border-radius: 2rem;
 }
