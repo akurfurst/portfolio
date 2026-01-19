@@ -78,6 +78,7 @@ h2 {
     gap: 2rem;
     align-items: center;
     justify-content: center;
+    text-align: center;
 }
 
 #aboutMe p{
