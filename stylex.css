@@ -7,7 +7,6 @@ body {
 header {
     background-color: #A27B5C;
     color: #DCD7C9;
-    width: 750px;
     padding: 1rem;
     margin: 0 auto;
     border: .25rem solid #3F4F44;
@@ -15,14 +14,13 @@ header {
 }
 
 main {
-    width: 750px;
     margin: 0 auto;
     background-color: #DCD7C9;
     padding: 2rem;
     border: .25rem solid #3F4F44;
     border-radius: 2rem;
     margin-top: 1rem;
-    color: #2C3930
+    color: #2C3930;
 }
 
 h1 {
@@ -92,10 +90,69 @@ h2 {
     padding: 1rem;
     color:#DCD7C9;
     margin-bottom: 1rem;
-
 }
 
 img{
     border: 2px solid #3F4F44;
     border-radius: 2rem;
+}
+
+/* Media query for tablets and larger screens (750px and up) */
+@media screen and (min-width: 750px) {
+    header {
+        width: 90%;
+    }
+    
+    main {
+        width: 90%;
+        display: grid;
+        grid-template-columns: 40% auto;
+        grid-template-areas: "summary  education"
+                             "skills  skills"
+                             "experience experience";
+        grid-gap: 2rem;
+    }
+    
+    #aboutMe {
+        grid-area: summary;
+    }
+    
+    #education {
+        grid-area: education;
+    }
+    
+    #skills {
+        grid-area: skills;
+    }
+    
+    #experience{
+        grid-area: experience;
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto auto;
+        grid-template-areas: "h h"
+                             "ex1 ex2"
+                             "ex3 ex4";
+        grid-gap: 1rem;
+    }
+
+    #experience h2{
+        grid-area: h;
+    }
+
+    #ex1{
+        grid-area: ex1;
+    }
+
+    #ex2{
+        grid-area: ex2;
+    }
+
+    #ex3{
+        grid-area: ex2;
+    }
+
+    #ex4{
+        grid-area: ex2;
+    }
 }
