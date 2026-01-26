@@ -111,7 +111,7 @@ img{
 }
 
 
-@media screen and (min-width: 750px) {
+@media screen and (min-width: 850px) {
     header {
         width: 90%;
     }
