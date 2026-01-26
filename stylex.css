@@ -37,9 +37,22 @@ h1 {
     width: 75%;
 }
 
+#contact p{
+    margin: 1rem;
+}
+
 a {
     text-decoration: none;
     color: #DCD7C9;
+    border-radius: 20px;
+    border: 2px solid #A27B5C;
+}
+
+a:hover {
+    transition: 0.3s;
+    border: 2px solid #DCD7C9;
+    border-radius: 20px;
+    background-color: #3F4F44;
 }
 
 li {
@@ -97,7 +110,7 @@ img{
     border-radius: 2rem;
 }
 
-/* Media query for tablets and larger screens (750px and up) */
+
 @media screen and (min-width: 750px) {
     header {
         width: 90%;
@@ -149,10 +162,10 @@ img{
     }
 
     #ex3{
-        grid-area: ex2;
+        grid-area: ex3;
     }
 
     #ex4{
-        grid-area: ex2;
+        grid-area: ex4;
     }
 }
